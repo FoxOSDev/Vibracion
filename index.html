@@ -24,7 +24,12 @@
 			<br>
 			<button id="marcha" onclick="marcha()">Marcha Imperial</button>
 			<br>
-			<button id="install" onclick="install()">App</button>
+			<script type='text/javascript'>
+				if(enyo.platform.firefoxOS) {
+		      document.writeln('<button id="install" onclick="install()">App</button>')
+				                           
+				}
+			</script>
 	    </div>
 	</body>
 </html>
